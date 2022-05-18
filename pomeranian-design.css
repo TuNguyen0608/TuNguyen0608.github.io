@@ -1,0 +1,18 @@
+/*image*/
+img {
+    border-radius: 30px;
+    /*rounded corners of images*/
+    visibility: visible;
+    width: 570px;
+    height: auto;
+}
+
+/*header 2*/
+h2 {
+    color:rgb(132, 72, 132);
+}
+
+/*header 3*/
+h3 {
+    color:rgb(153, 63, 153);
+}

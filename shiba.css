@@ -1,0 +1,98 @@
+
+
+            body{
+                background-image: url("https://i.pinimg.com/originals/07/3b/db/073bdbab8399839c7f61917d2278343f.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                /*Pearl: fixed the background so that image covers all of the background and it's not repeating*/
+                font-family: serif;
+                color: #111111;
+                font-weight: 500;
+            }
+
+            h1 {
+                color: rgb(0, 0, 0);
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                font-weight:900;
+                font-style: italic;
+                font-weight: bold;
+                text-align: center;
+            }
+            #itext {
+                font-style: italic;
+                color:rgb(19, 79, 59);
+            }
+
+            a:hover {
+                color: rgb(228, 76, 76);
+            }
+
+            p a {
+                text-transform: uppercase;
+            }
+
+            /* lists */
+            ol {
+                list-style-type: lower-roman;
+            }
+            ul.names {
+                display: block;
+                width: 10%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            /* bold */
+            strong {
+                font-weight: 900;
+            }
+
+            /* italic */
+            em {
+                font-style: oblique;
+                font-weight: 600;
+            }
+
+
+            img {
+                border-radius: 50px;
+                visibility: visible;
+                /*Pearl: rounded all images, set visibility to visible, made all images have an opacity of 0.5*/
+                display: block;
+              /*  margin-left: auto;
+                margin-right: auto;
+                centered code*/
+            }
+
+            /*Incase want button*/
+            div.button {
+                border: 1px  solid red;
+                border-radius: 10px;
+                width: 150px;
+                height: 75px;
+                padding: 19px;
+                text-align: center;
+                background-color: pink;
+                margin: auto;
+                -webkit-transition: width 1s, height 1s;
+                transition: width 1s, height 1s;
+            }
+
+            div.button:hover {
+                background-color: white;
+                border: 1px solid black;
+                width: 160px;
+                height: 80px;
+            }
+            header {
+                background: black
+            }
+           /* div.container {
+                display: flex;
+                align-items: center;
+                padding:0;
+                margin: 0;
+             }*/
+            /*Pearl: check Discord message on 4/26 at 8:13 PM. Delete if not needed.*/
+            
