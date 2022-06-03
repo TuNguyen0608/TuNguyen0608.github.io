@@ -113,5 +113,56 @@
       </div>
       <!--end of button code-->
 
+      <!--javascript code start-->
+        <div class="container p-3 text-center">
+          <h3>Are Poms the Dog for You?</h3>
+          <button type="button" onclick="test()">Start</button>
+        </div>
+        
+        <script>
+          function test()
+            {
+            let response = [];
+            let count = 0;
+                    
+            //while loop
+            while(count <3)
+            {
+              alert ("This is the start of the quiz to see if pomeranians are the right dog for you. Please only enter yes or no in the answer slots.");
+        
+              var input = prompt("Will you walk your pomeranian at least 5 times a week?")
+              response[0] = input;
+              count++;
+        
+              var input2 = prompt("Will you feed your pomeranian every day?")
+              response[1] = input2;
+              count++;
+        
+              var input3 = prompt("Will you give your pomeranian lots of cuddles and love?")
+              response[2] = input3;
+              count++; 
+              }
+        
+              var countNo = 0
+              var countYes = 0
+                    
+              //for loop
+              for(var i=0;i<response.length;i++)
+              {
+              if (response[i] == "no")
+              countNo++;
+              if (response[i] == "yes")
+              countYes++;
+              }
+              if (countYes > countNo)
+              alert ("Go Get a Pom! RIGHT NOW!");
+        
+              else 
+              alert("Get a fish");
+              }
+        
+        </script>
+      <!--end of javascript code-->
+
       </body>
   </html>
