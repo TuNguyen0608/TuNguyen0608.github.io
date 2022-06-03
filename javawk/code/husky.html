@@ -23,6 +23,8 @@
             h2 {color: purple;}
             h3 {color: purple;}
         </style>
+        <!--Js?-->
+        <script src="script/husky.js"></script>
     </head>
 
     <body>
@@ -82,11 +84,61 @@
             </table>
         </div>
         
+        <!--Quiz (center)-->
+        <div class="container p-3 text-center">
+            <h3>Husky Quiz</h3>
+            <p>Test your knowlege on huskies with this short Quiz!</p>
+            <p>Please type all answers in lowercase only :)</p>
+            <button style="background-color:gold" type="button" onclick="quiz()">Play!</button>
+        </div>
+        
+        <script>
+            function quiz(){
+                //variable setup
+                var input = "hi";
+                let score = 0;
+                const answer = ["playfull","affectionate","energetic","blue","brown", "alaskan malamute"];
+                //while loop for game
+                while(score != 69){
+                    //alert("oh god im mooooorbin'!");
+                    //Question 1
+                    score = score + question("What is one social trait of huskies?", answer[0], answer[1], answer[2]);
+                    alert("Current score: " + score);
+                    //Question 2
+                    score = score + question("What is one of the huskies possible eye colors?", answer[3], answer[4]);
+                    alert("Current score: " + score);
+                    //Question 3
+                    score = score + question("What is the huskies 'burlier' cousin?", answer[5]);
+                    //results
+                    if(score >= 3) {
+                        alert("Final score: " + score + "\nPerfect score!");
+                    }else{
+                        alert("Final score: " + score);
+                    }
+                    //loop
+                    input = prompt("Would you like to try again? (y / n)");
+                    if(input == "n"){break;}
+                    score = 0;
+                }
+
+            }
+            
+            function question(askQ, ansA, ansB, ansC) {
+                input = prompt(askQ);
+                if(input == ansA || input == ansB || input == ansC) {
+                    alert("Correct!");
+                    return 1;
+                }
+                alert("Incorrect!");
+                return 0;
+            }
+        </script>
+        
+        <!--More images-->
         <div class="container p-3 text-center">
           <h3>More Huskies</h3>
         </div>
         
-        <!--More images-->
         <div class="d-flex">
             <div class="p-4 flex-fill">
                 <img src="https://highlandcanine.com/wp-content/uploads/2021/01/siberian-husky-in-the-snow.jpg" alt="image of a husky dog" title="Friendly husky dog">
