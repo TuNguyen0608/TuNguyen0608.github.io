@@ -1,38 +1,54 @@
 
 
             body{
-                background-image: url("https://i.pinimg.com/originals/07/3b/db/073bdbab8399839c7f61917d2278343f.jpg");
+                background-image: url("https://media.istockphoto.com/vectors/seamless-pattern-pawprints-and-hearts-vector-id1157608565?k=20&m=1157608565&s=612x612&w=0&h=OSdAxr9ujJpYNi4afEA5oisynntQHWHY5x4MQISysIw=");
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
-                /*Pearl: fixed the background so that image covers all of the background and it's not repeating*/
-                font-family: serif;
-                color: #111111;
+                font-family: sans-serif;
                 font-weight: 500;
             }
-
+            header {
+                background-color: rgb(88, 88, 88);
+                padding:50px;
+                font-size: large;
+                color: rgb(255, 255, 255);
+            }
+            .container {
+                margin-top: 30px;
+                padding: 10px;
+                align-items: center;
+            }
+            .invisibletext{
+                visibility: hidden;
+            }
             h1 {
-                color: rgb(0, 0, 0);
-                font-family:Georgia, 'Times New Roman', Times, serif;
+                font-family:sans-serif;
                 font-weight:900;
                 font-style: italic;
                 font-weight: bold;
                 text-align: center;
             }
+            h3 {
+                color: white;
+            }
             #itext {
                 font-style: italic;
                 color:rgb(19, 79, 59);
             }
-
+            .dog-quote{
+                background-color: rgb(88, 88, 88);
+                margin: 30px;
+                text-align: center;
+                padding: 10px;
+            }
             a:hover {
-                color: rgb(228, 76, 76);
+                color: rgb(165, 62, 62);;
             }
 
             p a {
                 text-transform: uppercase;
             }
-
-            /* lists */
             ol {
                 list-style-type: lower-roman;
             }
@@ -42,32 +58,84 @@
                 margin-left: auto;
                 margin-right: auto;
             }
-
-            /* bold */
             strong {
                 font-weight: 900;
             }
-
-            /* italic */
             em {
                 font-style: oblique;
                 font-weight: 600;
             }
 
-
             img {
                 border-radius: 50px;
                 visibility: visible;
-                /*Pearl: rounded all images, set visibility to visible, made all images have an opacity of 0.5*/
                 display: block;
-              /*  margin-left: auto;
-                margin-right: auto;
-                centered code*/
             }
-
-            /*Incase want button*/
+            /*-----start of open-----*/
+            .Shiba-age{
+                display: block;
+                background-color: rgb(125, 174, 220);
+                border-radius: 20px;
+                margin: 30px;
+                text-align: center;
+                padding: 10px;
+            }
+            .shibahappy {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items:center;
+                object-fit: contain;
+            }
+            * {
+                box-sizing:border-box;
+                margin: 0;
+                padding:0;
+            }
+            .shiba {
+                font-size: 10rem;
+                cursor: pointer;
+                user-select: none;
+            }
+            .vis {
+                display: block;
+            }
+            .notvis {
+                display: none;
+            }
+           
+            /*-----end of open-----*/
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                font-family:'Times New Roman', Times, serif
+            }
+            .shibacolors {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 35vh;
+            }
+            #info {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                color: blue;
+            }
+            #info div {
+                padding: 10px;
+                border-radius: 50px;
+                background: rgb(165, 62, 62);
+                margin: 0.5rem;
+                border:10px;
+                color: floralwhite;
+                font-size: 1.2rem;
+                text-align: center;
+            }
+            /*--end shiba colors--*/
             div.button {
-                border: 1px  solid red;
+                border: 1px  solid rgb(165, 62, 62);;
                 border-radius: 10px;
                 width: 150px;
                 height: 75px;
@@ -78,21 +146,9 @@
                 -webkit-transition: width 1s, height 1s;
                 transition: width 1s, height 1s;
             }
-
             div.button:hover {
                 background-color: white;
                 border: 1px solid black;
                 width: 160px;
                 height: 80px;
             }
-            header {
-                background: black
-            }
-           /* div.container {
-                display: flex;
-                align-items: center;
-                padding:0;
-                margin: 0;
-             }*/
-            /*Pearl: check Discord message on 4/26 at 8:13 PM. Delete if not needed.*/
-            
